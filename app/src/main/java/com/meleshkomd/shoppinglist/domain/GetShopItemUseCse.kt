@@ -1,8 +1,8 @@
 package com.meleshkomd.shoppinglist.domain
 
-class GetShopItemUseCse {
+class GetShopItemUseCse(private val shopListRepository: ShopListRepository) {
 
     fun getShopItem(shopItemId: Int): ShopItem {
-        TODO()
+        return shopListRepository.getShopItem(shopItemId)
     }
 }
